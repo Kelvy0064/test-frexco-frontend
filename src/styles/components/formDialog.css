@@ -1,0 +1,22 @@
+.MuiDialog-paperWidthSm {
+    display: flex;
+    min-width: 600px;
+}
+
+.about {
+    margin-top: 5px;
+    min-height: 50px;
+    min-width: 500px;
+    max-width: 548px;
+}
+
+.level {
+    width: 40%;
+    margin: 5px;
+}
+
+.form-group-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

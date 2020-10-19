@@ -1,0 +1,140 @@
+body {
+    background: url('../../images/wallpaper.png');
+    background-attachment: fixed;
+}
+.curriculum-main {
+    display: grid;
+    grid-template-areas: 'name name name' 'about . skills' ;
+}
+
+.curriculum-main h1 {
+    grid-area: name;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+}
+
+.curriculum-main p {
+    grid-area: about;
+    margin: 50px;
+    display: block;
+    max-width: 300px;
+
+}
+
+.curriculum-main strong {
+    display: flex;
+}
+
+.curriculum-main .div-skills {
+    grid-area: skills;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 60px 50px auto;
+    position: relative;
+    height: 100%;
+
+}
+
+.curriculum-main .div-skills .skills {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.curriculum-main .div-skills .skills-container {
+    width: 350px;
+    display: flex;
+}
+
+
+.curriculum-main .div-skills .skills-container .img-jr {
+    display: flex;
+    max-width: 15px;
+    max-height: 15px;
+    margin: 0 10px 0 0;
+}
+
+.curriculum-main .div-skills .skills-container .img-sr {
+    display: flex;
+    max-width: 15px;
+    max-height: 15px;
+    margin: 0 0 0 auto;
+
+}
+
+.curriculum-main .div-skills div {
+    margin-bottom: 3px;
+    width: 300px;
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.curriculum-main .div-skills .iniciante {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background: #00BFFF;
+}
+
+.curriculum-main .div-skills .intermediario {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    background: #00BFFF;
+}
+
+.curriculum-main .div-skills .avançado {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    background: #00BFFF;
+}
+
+.curriculum-certified {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 65vw;
+    grid-gap: 10px 10px;
+    height: 100%;
+}
+
+.certified {
+    height: 200px;
+}
+
+.certified:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.certified img {
+    height: inherit;
+}
+
+.new-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: aliceblue;
+    border: 1px solid #00BFFF;
+}
+
+.new-img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.new-img input[type="file"] {
+    display: none;
+    height: 100%;
+    width: 100%;
+}
